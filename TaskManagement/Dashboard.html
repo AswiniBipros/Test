@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script language="javascript" type="text/javascript" src="TaskManagementScript.js"></script>
+    <script>
+        
+    </script>
+</head>
+
+<body onload="getTheTaskRecordsFromLocalStorage()" >
+    <h3>Welcome to Dashboard</h3>
+    <button type="button" onclick="location.href = './InsertNewTask.html'">Enter new task</button>
+    <div style="margin-left: 20%;">
+        <table border="1" style="width: 60%;text-align: center;">
+            <tr>
+                <td>TaskId</td>
+                <td>TaskName</td>
+                <td>Priority</td>
+                <td>Delete</td>
+                <td>Modify</td>
+            </tr>
+            <tbody id="tableData"></tbody>
+        </table>
+    </div>
+    <div style="margin-left: 20%;margin-top: 10px;" id="modifyWindow">
+        <table border="1" style="width: 60%;text-align: center;">
+            <tr>
+                <td>TaskId</td>
+                <td>TaskName</td>
+                <td>Priority</td>
+                <td>Modify</td>
+            </tr>
+            <tbody id="modifyTableData">
+                
+            </tbody>
+    </div>
+</body>
+
+</html>

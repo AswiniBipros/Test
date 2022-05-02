@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="TaskManagementScript.js"></script>
+</head>
+
+<body onload="loadTheStudentId()">
+    <table border="1">
+        <tr>
+            <td>TaskId</td>
+            <td>TaskName</td>
+            <td>Priority</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="taskId" disabled></td>
+            <td><input type="text" id="taskName" name="taskName" required></td>
+            <td>
+                <select id="taskPriority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="saveTask()">Save</button></td>
+        </tr>
+    </table>
+</body>
+</html>
